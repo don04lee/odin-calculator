@@ -1,3 +1,78 @@
 body {
   font-family: 'Courier New', Courier, monospace;
+  font-size: 50px;
+  font-weight: bolder;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.header {
+  margin-top: 10px;
+}
+
+.calculator {
+  width: 600px;
+  background-color: lightgray;
+  border: 5px solid lightgray;
+  border-radius: 25px;
+}
+
+.display {
+  background-color: whitesmoke;
+  height: 150px;
+  box-sizing: border-box;
+  border: 20px solid lightgray;
+  border-radius: 25px;
+  display: flex;
+  padding-right: 10px;
+  font-size: 75px;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  background-color: lightgray;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+}
+
+.buttons .misc,
+.buttons .operation,
+.buttons .number,
+#decimal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 100px;
+  box-sizing: border-box;
+  border: 10px solid lightgray;
+  border-radius: 25px;
+  margin-left: -1px;
+  margin-top: -1px;
+}
+
+.buttons .misc {
+  background-color: lightsteelblue;
+}
+
+.buttons .operation {
+  background-color: darkgray;
+}
+
+.buttons .number,
+#decimal {
+  background-color: whitesmoke;
+}
+
+#zero {
+  width: 300px;
+  height: 100px;
 }
