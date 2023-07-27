@@ -18,22 +18,24 @@ body {
   background-color: lightgray;
   border: 5px solid lightgray;
   border-radius: 25px;
+  overflow: hidden;
 }
 
 .display {
   background-color: whitesmoke;
   height: 150px;
+  max-width: 100%;
   box-sizing: border-box;
   border: 20px solid lightgray;
   border-radius: 25px;
-  display: flex;
-  padding-right: 10px;
+  padding: 10px;
   font-size: 75px;
-  justify-content: flex-end;
-  align-items: flex-end;
+  text-align: right;
+  vertical-align: auto;
+  overflow-x: auto;
 }
 
-.buttons {
+#buttons {
   display: flex;
   flex-wrap: wrap;
   box-sizing: border-box;
@@ -43,10 +45,12 @@ body {
   border-radius: 25px;
 }
 
-.buttons .misc,
-.buttons .operation,
-.buttons .number,
-#decimal {
+#buttons .misc,
+#buttons .operation,
+#buttons .number,
+#decimal,
+#equals,
+#delete {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -59,20 +63,24 @@ body {
   margin-top: -1px;
 }
 
-.buttons .misc {
+#buttons .misc {
   background-color: lightsteelblue;
 }
 
-.buttons .operation {
+#buttons .operation,
+#equals { 
   background-color: darkgray;
 }
 
-.buttons .number,
+#buttons #delete {
+  background-color: #ffc600;
+}
+
+#buttons .number,
 #decimal {
   background-color: whitesmoke;
 }
 
-#zero {
-  width: 300px;
-  height: 100px;
+#buttons .active {
+  border-color: lightcyan;
 }
