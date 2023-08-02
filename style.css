@@ -67,6 +67,10 @@ body {
   background-color: lightsteelblue;
 }
 
+#buttons #ac {
+  font-size: 30px;
+}
+
 #buttons .operation,
 #equals { 
   background-color: darkgray;
